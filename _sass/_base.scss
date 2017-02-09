@@ -57,11 +57,15 @@ p {
 .text-faded {
     color: rgba(white, .7);
 }
-.text-faded p {
-  margin-top:10px;
+.head-blank p {
+  margin-top:30px;
+  margin-bottom:30px;
+  font-size: 20px;
+  font-color: white;
 }
 .blank p {
-  margin-bottom:1px;
+
+  margin-bottom:2px;
 }
 section {
     padding: 100px 0;
