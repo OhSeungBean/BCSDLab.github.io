@@ -55,7 +55,7 @@ p {
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba(white, .9);
 }
 .head-blank p {
   margin-top:30px;
@@ -237,8 +237,8 @@ header {
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 650px;
-    margin: 0 auto;
+    max-width: 450px;
+    margin: 20px auto;
     .portfolio-box-caption {
         color: white;
         opacity: 0;
@@ -265,6 +265,7 @@ header {
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
+
             }
             .project-name {
                 font-size: 18px;
@@ -289,7 +290,61 @@ header {
         }
     }
 }
-
+.portfolio2-box {
+    position: relative;
+    display: block;
+    max-width: 450px;
+    margin: 20px auto;
+    .portfolio2-box-caption {
+        color: white;
+        opacity: 0;
+        display: block;
+        background: rgba( $theme-primary, .9 );
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        @include transition-all;
+        .portfolio2-box-caption-content {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            .project2-category,
+            .project2-name {
+                @include sans-serif-font;
+                padding: 0 15px;
+            }
+            .project2-category {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .project2-name {
+                font-size: 18px;
+            }
+        }
+    }
+    &:hover {
+        .portfolio2-box-caption {
+            opacity: 1;
+        }
+    }
+    @media (min-width: 768px) {
+        .portfolio2-box-caption {
+            .portfolio2-box-caption-content {
+                .project2-category {
+                    font-size: 16px;
+                }
+                .project2-name {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
